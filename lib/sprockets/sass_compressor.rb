@@ -43,6 +43,7 @@ module Sprockets
         read_cache: false,
         style: :compressed
       }.merge(options).freeze
+      puts "---------------------------- #{@options}"
       @cache_key = "#{self.class.name}:#{Autoload::Sass::VERSION}:#{VERSION}:#{DigestUtils.digest(options)}".freeze
     end
 
