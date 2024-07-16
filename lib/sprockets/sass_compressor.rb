@@ -27,6 +27,7 @@ module Sprockets
     end
 
     def self.call(input)
+      puts "------------------------ input: #{input}"
       instance.call(input)
     end
 
